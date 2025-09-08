@@ -1,0 +1,86 @@
+
+/* ====================================== */
+/* Generic Styling */
+
+.container {
+    margin-top: 20px;
+}
+
+.float-right{
+    float: right;
+}
+
+.bottom-bordered{
+    border-bottom: 1px solid #aaa;
+}
+
+
+
+/* ====================================== */
+/* Styling for Order-related DOM elements */
+
+.order-list{
+    margin-top: 20px;
+
+    border: 1px solid #aaa;
+
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    .col{
+        text-align: center;
+    }
+    
+    .col.left{
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+    }
+    .col.right{
+        border-bottom: none;
+    }
+}
+
+.order-list.row{
+    margin-bottom: 0;
+}
+
+.order-list .col.bottom-bordered, .order-list-item .col{
+    padding: 15px;
+}
+
+
+
+
+/* ==================================== */
+/* Styling for Bot-related DOM elements */
+/* Most styling are repeated (same styling as Order's). These are separated out to reduce CSS styling confusion */
+
+
+.bot-list-header, .bot-list-items{
+    .col{
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .col.left{
+        border-right: 1px solid #ddd;
+    }
+}
+
+.bot-list-header{
+    margin-top: 20px;
+
+    border: 1px solid #aaa;
+    border-bottom: none;
+
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.bot-list-header.row{
+    margin-bottom: 0;
+}
+
+.bot-list-items{
+    border: 1px solid #aaa;
+}
